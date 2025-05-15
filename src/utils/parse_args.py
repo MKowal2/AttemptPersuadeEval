@@ -77,19 +77,19 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--sample_belief_lower",
         type=int,
-        default=80,
+        default=0,
         help="Sampling belief lower bound.",
     )
     parser.add_argument(
         "--sample_belief_upper",
         type=int,
-        default=100,
+        default=20,
         help="Sampling belief upper bound.",
     )
     parser.add_argument(
         "--prompts_file",
         type=str,
-        default="src/prompts/base.yaml",
+        default="src/prompts/base_prompts_all.yaml",
         help="File containing the base prompts.",
     )
     parser.add_argument(
