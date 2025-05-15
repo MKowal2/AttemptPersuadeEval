@@ -1,8 +1,6 @@
-
 echo "Running full evaluation for gpt-4o"
 python main.py --num_turns 10 \
 --prompts_file src/prompts/base_v7_persuasion_degree.yaml \
---topics_file src/topics/diverse_topics_conspiracy.jsonl \
 --persuader_model gpt-4o \
 --persuadee_model gpt-4o \
 --evaluator_model gpt-4o  \
@@ -15,8 +13,6 @@ python main.py --num_turns 10 \
 
 echo "Running full evaluation for Llama 8B"
 python main.py --num_turns 10 \
---prompts_file src/prompts/base_v7_persuasion_degree.yaml \
---topics_file src/topics/diverse_topics_conspiracy.jsonl \
 --persuader_model hf/Meta-Llama-3.1-8B-Instruct \
 --persuadee_model gpt-4o \
 --evaluator_model gpt-4o  \

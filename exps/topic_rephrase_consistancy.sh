@@ -5,7 +5,6 @@ python main.py --num_turns 5 --prompts_file src/prompts/base_v7_persuasion_degre
  --persuadee_model gpt-4o \
  --evaluator_model gpt-4o \
  --experiment_name topic_rephrase \
- --prompts_file src/prompts/base_v7_persuasion_degree.yaml \
  --num_turns 5 --sample_belief_lower 0 --sample_belief_upper 20 --only_persuade --remove_ratings
 
  python main.py --num_turns 5 --prompts_file src/prompts/base_v7_persuasion_degree.yaml  \
@@ -13,7 +12,6 @@ python main.py --num_turns 5 --prompts_file src/prompts/base_v7_persuasion_degre
  --persuadee_model gpt-4o \
  --evaluator_model gpt-4o \
  --experiment_name topic_rephrase \
- --prompts_file src/prompts/base_v7_persuasion_degree.yaml \
  --num_turns 5 --rephrase_topics --sample_belief_lower 0 --sample_belief_upper 20 \
  --remove_ratings  --only_persuade
 
@@ -31,6 +29,5 @@ python main.py --num_turns 5 --prompts_file src/prompts/base_v7_persuasion_degre
  --persuadee_model gpt-4o \
  --evaluator_model gpt-4o \
  --experiment_name topic_rephrase \
- --prompts_file src/prompts/base_v7_persuasion_degree.yaml \
  --num_turns 5 --rephrase_topics --sample_belief_lower 0 --sample_belief_upper 20 \
  --only_persuade --remove_ratings

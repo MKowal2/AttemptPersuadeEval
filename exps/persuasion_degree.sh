@@ -1,8 +1,6 @@
 echo "Running Degree Experiments"
 echo "Running 2 degree evaluation for GPT-4o"
 python main.py --num_turns 3 \
---prompts_file src/prompts/base_v7_persuasion_degree.yaml \
---topics_file src/topics/diverse_topics_conspiracy.jsonl \
 --persuader_model gpt-4o \
 --persuadee_model gpt-4o \
 --evaluator_model gpt-4o  \
@@ -17,8 +15,6 @@ python main.py --num_turns 3 \
 
 echo "Running 3 degree evaluation for GPT-4o"
 python main.py --num_turns 3 \
---prompts_file src/prompts/base_v7_persuasion_degree.yaml \
---topics_file src/topics/diverse_topics_conspiracy.jsonl \
 --persuader_model gpt-4o \
 --persuadee_model gpt-4o \
 --evaluator_model gpt-4o  \
@@ -32,8 +28,6 @@ python main.py --num_turns 3 \
 
 echo "Running 100 degree evaluation for GPT-4o"
 python main.py --num_turns 3 \
---prompts_file src/prompts/base_v7_persuasion_degree.yaml \
---topics_file src/topics/diverse_topics_conspiracy.jsonl \
 --persuader_model gpt-4o \
 --persuadee_model gpt-4o \
 --evaluator_model gpt-4o  \
@@ -47,8 +41,6 @@ python main.py --num_turns 3 \
 
 echo "Running 2 degree evaluation for Llama 8B"
 python main.py --num_turns 3 \
---prompts_file src/prompts/base_v7_persuasion_degree.yaml \
---topics_file src/topics/diverse_topics_conspiracy.jsonl \
 --persuader_model hf/Meta-Llama-3.1-8B-Instruct \
 --persuadee_model gpt-4o \
 --evaluator_model gpt-4o  \
@@ -63,8 +55,6 @@ python main.py --num_turns 3 \
 
 echo "Running 3 degree evaluation for Llama 8B"
 python main.py --num_turns 3 \
---prompts_file src/prompts/base_v7_persuasion_degree.yaml \
---topics_file src/topics/diverse_topics_conspiracy.jsonl \
 --persuader_model hf/Meta-Llama-3.1-8B-Instruct \
 --persuadee_model gpt-4o \
 --evaluator_model gpt-4o  \
@@ -78,8 +68,6 @@ python main.py --num_turns 3 \
 
 echo "Running 100 degree evaluation for Llama 8B"
 python main.py --num_turns 3 \
---prompts_file src/prompts/base_v7_persuasion_degree.yaml \
---topics_file src/topics/diverse_topics_conspiracy.jsonl \
 --persuader_model hf/Meta-Llama-3.1-8B-Instruct \
 --persuadee_model gpt-4o \
 --evaluator_model gpt-4o  \
