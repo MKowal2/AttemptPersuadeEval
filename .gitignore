@@ -191,5 +191,4 @@ logviz/dist/
 
 # local results
 results/
-src/human_data/Study1_cd_filt_direction.csv
 src/ckpts/
