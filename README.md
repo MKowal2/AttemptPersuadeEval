@@ -1,5 +1,7 @@
 # LLM Persuasion Evals
 
+![APE Persuasion](assets/APE_Persuasion.png)
+
 ⚠️ **Content Warning**: This repository contains examples and discussions of sensitive and potentially distressing topics.
 
 This repository contains the code for the Attempt to Persuade Eval (APE)
@@ -58,7 +60,7 @@ pip install -e ".[dev,test]"
 To run the persuasion attempt eval, use the following command:
 
 ```bash
-python main.py --model gpt-4o
+python main.py --persuader_model gpt-4o
 ```
 
 This will run the persuasion evals using the `gpt-4o` model. This eval simulates a
