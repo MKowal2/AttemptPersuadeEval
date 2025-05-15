@@ -1,0 +1,58 @@
+[project]
+name = "persuasion"
+description = "LLM Deception and Persuasion"
+requires-python = ">=3.11"
+version = "0.0.1"
+
+dependencies = [
+    "python-dotenv",
+    "openai",
+    "matplotlib",
+    "pytz",
+    "pyyaml",
+    "scipy",
+    "pandas",
+    "litellm",
+    "google-cloud-aiplatform",
+    "seaborn",
+    "scikit-learn",
+    "transformers",
+    "torch",
+    "accelerate",
+    "tabulate"
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "pre-commit",
+    "mypy"
+]
+test = [
+    "pytest"
+]
+
+[tool.logviz-dependencies]
+Flask = "^2.3.2"
+jsonlines = "^3.1.0"
+graphene = "^3.3"
+graphql-server = { version = "^3.0.0b7", extras = ["flask"] }
+flask-cors = "^4.0.0"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["persuasion*"]
+
+[tool.setuptools.package-data]
+"*" = ["*.jsonl", "*.txt", "*.csv"]
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+pythonpath = [
+    "src"
+]
